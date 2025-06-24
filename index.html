@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Canatelets - Carta</title>
+  <title>Canaletes - Carta</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -44,11 +44,20 @@
     .menu-item {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 0.5rem 0;
       border-bottom: 1px solid #eee;
     }
-    .menu-item:last-child {
-      border-bottom: none;
+    .menu-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1rem;
+    }
+    .menu-item .item-info {
+      display: flex;
+      align-items: center;
     }
     .menu-item span.price {
       color: #7b4b28;
@@ -66,70 +75,101 @@
         align-items: flex-start;
       }
       .menu-item span.price {
-        margin-top: 0.2rem;
+        margin-top: 0.5rem;
+      }
+      .menu-item .item-info {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Carta de Canatelets</h1>
+    <h1>Carta de Canaletes</h1>
   </header>
 
   <section class="menu-section">
     <h2>Cafés</h2>
     <div class="menu-item">
-      <span>Espresso</span>
-      <span class="price">$2.00</span>
+      <div class="item-info">
+        <img src="img/espresso.jpg" alt="Espresso">
+        <span>Espresso</span>
+      </div>
+      <span class="price">2,00 €</span>
     </div>
     <div class="menu-item">
-      <span>Latte</span>
-      <span class="price">$2.80</span>
+      <div class="item-info">
+        <img src="img/latte.jpg" alt="Latte">
+        <span>Latte</span>
+      </div>
+      <span class="price">2,80 €</span>
     </div>
     <div class="menu-item">
-      <span>Cappuccino</span>
-      <span class="price">$3.00</span>
+      <div class="item-info">
+        <img src="img/cappuccino.jpg" alt="Cappuccino">
+        <span>Cappuccino</span>
+      </div>
+      <span class="price">3,00 €</span>
     </div>
   </section>
 
   <section class="menu-section">
     <h2>Tés</h2>
     <div class="menu-item">
-      <span>Té Verde</span>
-      <span class="price">$2.50</span>
+      <div class="item-info">
+        <img src="img/te-verde.jpg" alt="Té Verde">
+        <span>Té Verde</span>
+      </div>
+      <span class="price">2,50 €</span>
     </div>
     <div class="menu-item">
-      <span>Té Chai</span>
-      <span class="price">$2.70</span>
+      <div class="item-info">
+        <img src="img/te-chai.jpg" alt="Té Chai">
+        <span>Té Chai</span>
+      </div>
+      <span class="price">2,70 €</span>
     </div>
   </section>
 
   <section class="menu-section">
     <h2>Pastelería</h2>
     <div class="menu-item">
-      <span>Croissant de Mantequilla</span>
-      <span class="price">$2.20</span>
+      <div class="item-info">
+        <img src="img/croissant.jpg" alt="Croissant de Mantequilla">
+        <span>Croissant de Mantequilla</span>
+      </div>
+      <span class="price">2,20 €</span>
     </div>
     <div class="menu-item">
-      <span>Muffin de Arándanos</span>
-      <span class="price">$2.80</span>
+      <div class="item-info">
+        <img src="img/muffin.jpg" alt="Muffin de Arándanos">
+        <span>Muffin de Arándanos</span>
+      </div>
+      <span class="price">2,80 €</span>
     </div>
   </section>
 
   <section class="menu-section">
     <h2>Bebidas Frías</h2>
     <div class="menu-item">
-      <span>Frappé de Café</span>
-      <span class="price">$3.50</span>
+      <div class="item-info">
+        <img src="img/frappe.jpg" alt="Frappé de Café">
+        <span>Frappé de Café</span>
+      </div>
+      <span class="price">3,50 €</span>
     </div>
     <div class="menu-item">
-      <span>Smoothie de Frutas</span>
-      <span class="price">$3.80</span>
+      <div class="item-info">
+        <img src="img/smoothie.jpg" alt="Smoothie de Frutas">
+        <span>Smoothie de Frutas</span>
+      </div>
+      <span class="price">3,80 €</span>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Canatelets. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Canaletes. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
