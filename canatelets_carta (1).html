@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canatelets - Carta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fdfdfb;
+      color: #3e3e3e;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #7b4b28;
+    }
+    .menu-section {
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+    }
+    .menu-section h2 {
+      color: #b28a50;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #b28a50;
+      display: inline-block;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+    .menu-item span.price {
+      color: #7b4b28;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu-item span.price {
+        margin-top: 0.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carta de Canatelets</h1>
+  </header>
+
+  <section class="menu-section">
+    <h2>Cafés</h2>
+    <div class="menu-item">
+      <span>Espresso</span>
+      <span class="price">$2.00</span>
+    </div>
+    <div class="menu-item">
+      <span>Latte</span>
+      <span class="price">$2.80</span>
+    </div>
+    <div class="menu-item">
+      <span>Cappuccino</span>
+      <span class="price">$3.00</span>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Tés</h2>
+    <div class="menu-item">
+      <span>Té Verde</span>
+      <span class="price">$2.50</span>
+    </div>
+    <div class="menu-item">
+      <span>Té Chai</span>
+      <span class="price">$2.70</span>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Pastelería</h2>
+    <div class="menu-item">
+      <span>Croissant de Mantequilla</span>
+      <span class="price">$2.20</span>
+    </div>
+    <div class="menu-item">
+      <span>Muffin de Arándanos</span>
+      <span class="price">$2.80</span>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Bebidas Frías</h2>
+    <div class="menu-item">
+      <span>Frappé de Café</span>
+      <span class="price">$3.50</span>
+    </div>
+    <div class="menu-item">
+      <span>Smoothie de Frutas</span>
+      <span class="price">$3.80</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Canatelets. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
